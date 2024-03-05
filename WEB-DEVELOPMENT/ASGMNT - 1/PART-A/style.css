@@ -1,0 +1,138 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.navbar {
+  background: black;
+  height: 60px;
+position: fixed;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-style: oblique;
+
+}
+a {
+  margin-left: 20px;
+  color: aliceblue;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  margin-right: 20px;
+}
+
+li a:hover {
+  color: aqua;
+}
+
+.text h3{
+    text-align: center;
+    margin-top: 70px;
+    font-size:80px;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.card-conatiner{
+    margin:auto;
+    border: 5px solid blue;
+    padding: 2px;
+    justify-content: center;
+border-radius: 10px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+.card-conatiner:hover{
+    border-color: brown;
+}
+
+.card-space{
+justify-content: center;
+   margin: 30px;
+}
+
+.card-space img{
+width: 200px;
+height: 300px;
+border-radius: 10px;
+}
+
+.card-space img:hover{
+    opacity: 0.7;
+}
+
+.card-space h4{
+
+    text-align: center;
+}
+
+.card-space a{
+    background-color: yellow;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px;
+  
+border-radius: 5px;
+border: 1px solid black;
+margin-left: 40px;
+
+}
+
+.card-space a:hover{
+    color: aqua;
+    background-color: black;
+}
+
+.spage-img{
+text-align: center;
+    padding: 50px;
+}
+
+
+
+
+
+
+footer {
+  background: black;
+
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+footer p {
+  color: aliceblue;
+}
