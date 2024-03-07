@@ -1,0 +1,53 @@
+/*# sourceMappingURL=PDstyle.css.map */
+
+.heading{
+    margin: 30px 30px 10px 30px;
+}
+.productImage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productImage img {
+  height: 300px;
+  width: 300px;
+  padding: 50px 20px 20px 20px;
+}
+.Description {
+  margin: 20px;
+}
+.Quantity {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.quantitycheck button {
+  padding: 5px;
+  background: rgb(33, 112, 110);
+  color: aliceblue;
+  border: none;
+  padding: 10px 20px;
+  font-size: large;
+  border-radius: 5px;
+}
+.quantitycheck button:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.5s;
+}
+
+.buybutton button{
+    padding: 5px;
+  background:rgb(139, 58, 215);
+  border: none;
+  padding: 10px 20px;
+  font-size: large;
+  border-radius: 5px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.buybutton button:hover{
+    color: black;
+    background-color: aqua;
+    transition: 0.5s;
+}
