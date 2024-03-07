@@ -1,0 +1,238 @@
+/*# sourceMappingURL=style.css.map */
+
+
+
+* {
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Anta", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: RGB(221, 65, 36);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+
+  
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.logo a {
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 25px;
+  color: aqua;
+ 
+}
+
+.logo a:hover {
+  color: RGB(68, 184, 172);
+  transition: 0.2s;
+}
+ul {
+  padding-right: 20px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  margin-right: 25px;
+}
+
+li a:hover {
+  color: black;
+  transition: 0.2s;
+  border-bottom: 5px solid white;
+}
+.saleinfo {
+  color: #666;
+  margin-top: 50px;
+  background-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 200px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.saleinfo h3 {
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  padding: 20px 0px 0px 20px;
+  font-size: larger;
+  position: inherit;
+}
+.saleinfo h2 {
+  padding: 20px 0px 0px 20px;
+  font-size: 50px;
+  color: bisque;
+}
+
+.saleinfo img{
+   
+
+    height: 180px;
+    width: 360px;
+   
+}
+
+.Advertise img {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.cardclass {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin: auto;
+  position: static;
+}
+.card-container:hover {
+  transform: scale(1.05);
+  position: static;
+}
+
+.card {
+  width: calc(33.33% - 40px);
+  width: 325px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, 2);
+  margin: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.card:hover {
+  background-color: aqua;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+.card-content a {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  padding: 8px 16px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+  margin-top: 16px;
+  margin-left: 13px;
+}
+.card-content a:hover {
+  background-color: #666;
+}
+.bankoffers {
+  background-color: rgb(213, 207, 207);
+}
+.bankoffers img {
+  display: block;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sponsors img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: RGB(221, 65, 36);
+  justify-content: center;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 200pxpx;
+}
+
+footer h4 {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  bottom: 0%;
+  padding-top: 50px;
+}
+footer ul {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+footer ul li {
+  text-align: left;
+  color: aliceblue;
+}
+footer li a {
+  padding-left: 5px;
+}

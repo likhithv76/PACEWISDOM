@@ -1,0 +1,15 @@
+.displayitem {
+  background-image: url(Images/productbg.jpg);
+  position: static;
+  margin-top: 50px;
+  height: 200px;
+  background-size: 100%;
+}
+
+.displayitem h2 {
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 40px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
