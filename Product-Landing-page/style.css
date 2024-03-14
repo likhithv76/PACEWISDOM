@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #313131;
+}
+.navbar {
+  justify-content: center;
+}
+.navbar img {
+  height: 40px;
+  width: 120px;
+}
+.Hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 80px;
+}
+.HeroName {
+  color: white;
+  animation: slideLeft 2s 1;
+  align-items: center;
+  
+}
+.HeroImg {
+  background-repeat: no-repeat;
+background-size: contain;
+  animation: slideRight 2s 1;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(2000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.ImageSection {
+  background-color: black;
+  align-items: center;
+  width: 100%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes leftImage {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes leftRight {
+  from {
+    transform: translateX(2000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.VideoSection {
+  background-color: black;
+}
+.VideoSection video {
+  width: 100%;
+}
+.Features {
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  display: block;
+}
+.Features img {
+  width: 800px;
+  height: 100%;
+}
+.featuresDiv {
+  padding: 50px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0px) rotate(0);
+  }
+  100% {
+    transform: translateX(-10em);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px) rotate(0);
+  }
+  100% {
+    transform: translateX(10em);
+  }
+}
+.txt {
+  color: #fff;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+/* Design Section */
+.DesignSection{
+display: block;
+margin-left: 0%;
+margin-right: 0%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.DesignSection h1{
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 120px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  padding: 30px;
+
+
+}
+.DesignSection img{
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Quality */
+.Quality {
+  background-color: beige;
+}
+.QualityText {
+  padding: 20px;
+  text-align: center;
+}
+.QualityCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cards {
+  background-image: linear-gradient(45deg, #3d5299, #40a1ec, #275464, #4b0c5e);
+  animation: gradient 10s ease infinite;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Purchase */
+.Purchase{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+.PContainer{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.PContainer img{
+  width: 300px;
+ height: 200px;
+} 
+.PContainer a{
+  background-color: yellow;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.PContainer a:hover{
+
+  border: 1px soild black;
+  background-color: #129acc;
+}
+
+/* Remarks */
+.Remarks {
+  background-color: #fff;
+  color: black;
+}
+.Remarks h3 {
+  margin: 0px 20px;
+  padding-top: 20px;
+}
+.Remarks p {
+  padding: 30px;
+}
+
+.Footer {
+  left: 0;
+  bottom: 0;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  color: #fff;
+}
+.Footer img {
+  height: 3em;
+  width: 10em;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .Hero {
+    padding: 10px;
+  }
+
+  .Hero img {
+    max-width: 100%;
+  }
+}
