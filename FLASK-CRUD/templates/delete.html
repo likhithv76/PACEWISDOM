@@ -1,0 +1,24 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  .delete-message {
+    margin-bottom: 20px;
+  }
+  .delete-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .delete-form input[type="submit"]:hover {
+    background-color: #c82333;
+  }
+</style>
+<p>Are you sure you want to delete this employee?</p>
+<form action="/data/{{ employee.id }}/delete" method="post">
+  <input type="submit" value="Delete">
+</form>

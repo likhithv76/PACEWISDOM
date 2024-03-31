@@ -1,0 +1,65 @@
+<!-- {% for employee in employees %}
+<h3>{{employee}}</h3><hr>
+{% endfor %} -->
+<!-- datalist.html -->
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      margin-right: 10px;
+    }
+    form.delete-form {
+      display: inline;
+    }
+    form.delete-form input[type="submit"] {
+      padding: 5px 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form.delete-form input[type="submit"]:hover {
+      background-color: #c82333;
+    }
+  </style>
+<table border="1">
+    <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Position</th>
+        <th>Actions</th>
+    </tr>
+    {% for employee in employees %}
+    <tr>
+        <td>{{ employee.employee_id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.age }}</td>
+        <td>{{ employee.position }}</td>
+        <td>
+            <a href="/data/{{ employee.employee_id }}">View</a>
+            <a href="/data/{{ employee.employee_id }}/update">Update</a>
+            <form action="/data/{{ employee.employee_id }}/delete" method="post" style="display: inline;">
+                <input type="submit" value="Delete">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

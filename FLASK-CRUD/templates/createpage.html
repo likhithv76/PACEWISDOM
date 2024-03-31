@@ -1,0 +1,67 @@
+<!-- <form action='' method = "POST">
+    <p>employee ID <input type = "integer" name = "employee_id" /></p>
+    <p>name <input type = "text" name = "name" /></p>
+    <p>age <input type = "integer" name = "age" /></p>
+    <p>position <input type = "text" name = "position" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+  </form> -->
+  <!-- createpage.html -->
+
+
+<style>
+form {
+  width: 30%;
+margin: 5em auto;
+border: 1px solid grey;
+border-radius: 5px;
+padding: 3em;
+background-color: aquamarine;
+box-shadow: 0 1em 2em 0 rgba(0, 0, 0, 0.2);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  height: 3em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+input[type="text"]:hover{
+  border-color: #007bff;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+font-size: larger;
+}
+
+input[type="submit"]:hover {
+  background-color: #245282;
+}
+</style>
+  
+<form action="/data/create" method="post">
+  <label for="employee_id">Employee ID:</label>
+  <input type="text" id="employee_id" name="employee_id"><br><br>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="age">Age:</label>
+  <input type="text" id="age" name="age"><br><br>
+  <label for="position">Position:</label>
+  <input type="text" id="position" name="position"><br><br>
+  <input type="submit" value="Create">
+</form>

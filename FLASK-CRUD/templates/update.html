@@ -1,0 +1,47 @@
+<!-- <form action='' method = "POST">
+    <p>name <input type = "text" name = "name" value="{{employee.name}}"/></p>
+    <p>age <input type = "integer" name = "age"  value="{{employee.age}}"/></p>
+    <p>position <input type = "text" name = "position" value="{{employee.position}}"/></p>
+    <p><input type = "submit" value = "Submit" /></p>
+  </form> -->
+  <!-- update.html -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <form action="/data/{{ employee.employee_id }}/update" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="{{ employee.name }}"><br><br>
+  <label for="age">Age:</label>
+  <input type="text" id="age" name="age" value="{{ employee.age }}"><br><br>
+  <label for="position">Position:</label>
+  <input type="text" id="position" name="position" value="{{ employee.position }}"><br><br>
+  <input type="submit" value="Update">
+</form>
